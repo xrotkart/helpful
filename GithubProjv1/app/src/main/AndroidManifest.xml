@@ -32,6 +32,10 @@
             android:name=".WifiScanResults"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".VoiceStopwatch"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>
