@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import pl.slivka.githubprojv1.sendmail.SendMailFromApp;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -49,6 +51,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, VoiceStopwatch.class);
+                startActivity(intent);
+            }
+        });
+        Button button6 = (Button) findViewById(R.id.button6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SendMailFromApp.class);
                 startActivity(intent);
             }
         });
