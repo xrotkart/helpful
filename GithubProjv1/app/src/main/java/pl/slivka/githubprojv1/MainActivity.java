@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import pl.slivka.githubprojv1.intentservice.IntentServiceActivity;
 import pl.slivka.githubprojv1.sendmail.SendMailFromApp;
 
 public class MainActivity extends AppCompatActivity {
@@ -59,6 +60,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SendMailFromApp.class);
+                startActivity(intent);
+            }
+        });
+        Button button7 = (Button) findViewById(R.id.button7);
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, IntentServiceActivity.class);
                 startActivity(intent);
             }
         });
