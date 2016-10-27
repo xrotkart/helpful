@@ -48,6 +48,39 @@
         <service
             android:name=".intentservice.CapitalService"
             android:exported="false" />
+        <activity android:name=".urlhandler.URLHandler" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="www.this-so-does-not-exist.com" android:path="/something" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".urlhandler.SecondActivity"
+            android:label="2nd">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="www.shithappens.com" android:path="/3/hard" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.commonsware.android.MY_ACTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
