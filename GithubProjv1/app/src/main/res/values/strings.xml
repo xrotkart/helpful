@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GithubProjv1</string>
+    <string name="intro_message">Sample demo</string>
+
 </resources>
