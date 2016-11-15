@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import pl.slivka.githubprojv1.intentservice.IntentServiceActivity;
+import pl.slivka.githubprojv1.listpopupmenu.ListPopupMain;
 import pl.slivka.githubprojv1.sendmail.SendMailFromApp;
 import pl.slivka.githubprojv1.urlhandler.URLHandler;
 
@@ -85,6 +86,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, DateTimePickerActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button button10 = (Button) findViewById(R.id.button10);
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListPopupMain.class);
                 startActivity(intent);
             }
         });
