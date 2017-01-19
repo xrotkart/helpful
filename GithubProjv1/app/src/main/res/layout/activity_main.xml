@@ -93,6 +93,13 @@
                 android:id="@+id/button10"
                 android:layout_below="@+id/button9"
                 android:layout_gravity="center_horizontal" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Serializable/Parcelable"
+                android:id="@+id/button11"
+                android:layout_below="@+id/button10"
+                android:layout_gravity="center_horizontal" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
