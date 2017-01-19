@@ -34,8 +34,8 @@ public class ObjectPassDemo extends Activity implements OnClickListener {
 
     public void SerializeMethod(){
         Person mPerson = new Person();
-        mPerson.setName("Leon");
-        mPerson.setAge(25);
+        mPerson.setName("Stefan");
+        mPerson.setAge(20);
         Intent mIntent = new Intent(this,ObjectPassDemo1.class);
         Bundle mBundle = new Bundle();
         mBundle.putSerializable(SER_KEY,mPerson);
@@ -46,9 +46,9 @@ public class ObjectPassDemo extends Activity implements OnClickListener {
 
     public void PacelableMethod(){
         Book mBook = new Book();
-        mBook.setBookName("Android Developer Guide");
-        mBook.setAuthor("Leon");
-        mBook.setPublishTime(2014);
+        mBook.setBookName("Zima muminków");
+        mBook.setAuthor("Nie A.A Milne");
+        mBook.setPublishTime(1999);
         Intent mIntent = new Intent(this,ObjectPassDemo2.class);
         Bundle mBundle = new Bundle();
         mBundle.putParcelable(PAR_KEY, mBook);

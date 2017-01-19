@@ -9,6 +9,7 @@ import android.widget.Button;
 import pl.slivka.githubprojv1.intentservice.IntentServiceActivity;
 import pl.slivka.githubprojv1.listpopupmenu.ListPopupMain;
 import pl.slivka.githubprojv1.sendmail.SendMailFromApp;
+import pl.slivka.githubprojv1.serialparcel.ObjectPassDemo;
 import pl.slivka.githubprojv1.urlhandler.URLHandler;
 
 public class MainActivity extends AppCompatActivity {
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         button11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ListPopupMain.class);
+                Intent intent = new Intent(MainActivity.this, ObjectPassDemo.class);
                 startActivity(intent);
             }
         });
